@@ -26,3 +26,7 @@ namespace: argo
 images:
 - name: quay.io/argoproj/argocd
   newTag: v2.5.3
+
+configMapGenerator:
+  - envs:
+      - overlay/nogpg.yaml
