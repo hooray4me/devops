@@ -32,7 +32,7 @@ spec:
   template:
     spec:
       containers:
-        - name: argocd-applicationset-controller
+        - name: argocd-application-controller
           envFrom:
             - configMapRef:
                 name: envs
