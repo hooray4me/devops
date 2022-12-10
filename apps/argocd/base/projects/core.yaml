@@ -9,10 +9,8 @@ spec:
   sourceRepos:
   - '*'
   destinations:
-  - namespace: kube-system
-    server: https://kubernetes.default.svc
-  - namespace: argo
-    server: https://kubernetes.default.svc
+  - namespace: '*'
+    server: '*'
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
