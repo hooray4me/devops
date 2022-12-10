@@ -25,7 +25,7 @@ spec:
                 name: envs
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: argocd-application-controller
 spec:
