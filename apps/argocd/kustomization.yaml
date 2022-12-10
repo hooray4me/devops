@@ -27,6 +27,9 @@ images:
 - name: quay.io/argoproj/argocd
   newTag: v2.5.3
 
+patchesStrategicMerge:
+  - overlay/patch-env-from.yaml
+
 configMapGenerator:
   - envs:
       - overlay/nogpg.yaml
