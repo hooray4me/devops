@@ -30,3 +30,4 @@ images:
 configMapGenerator:
   - envs:
       - overlay/nogpg.yaml
+    name: envs
