@@ -27,6 +27,19 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: argocd-application-controller
+spec:
+  template:
+    spec:
+      containers:
+        - name: argocd-applicationset-controller
+          envFrom:
+            - configMapRef:
+                name: envs
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
   name: argocd-applicationset-controller
 spec:
   template:
