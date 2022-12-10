@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - sealed-github-https-credentials.yaml
 - base/projects/core.yaml
+- base/projects/cluster.yaml
 - base/projects/apps.yaml
 - base/projects/monitoring.yaml
 - base/projects/networking.yaml
